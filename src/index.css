@@ -1,0 +1,151 @@
+/* index.css - стили для основного HTML-файла */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message-list {
+  height: 400px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.message-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-text {
+  margin-left: 5px;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 10px;
+}
+
+.message-actions {
+  display: flex;
+  align-items: center;
+}
+
+.message-actions button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+}
+
+.message-actions button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.edit-button {
+  background-color: #007bff;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.pin-button {
+  background-color: #ffc107;
+}
+
+.message-file {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.message-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.message-video {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+#messageForm {
+  margin-top: 20px;
+  display: flex;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif;
+  resize: none;
+}
+
+#messageForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#messageForm button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
