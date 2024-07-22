@@ -294,6 +294,78 @@ code {
   .chat-content {
     padding-top: 20px;
   }
+
+  /* Стили для кнопок в `chat-tools` для мобильных устройств */
+  .chat-tools {
+    flex-wrap: wrap; /* Разрешаем перенос кнопок на новую строку */
+  }
+
+  .chat-tools button {
+    margin-bottom: 5px; /* Добавляем отступ снизу для кнопок на второй строке */
+  }
+
+  /* Стили для поля поиска для мобильных устройств */
+  #searchInput {
+    width: 100%; /* Занимает всю ширину */
+  }
+
+  /* Стили для кнопок в боковой панели */
+  .edit-group-icon,
+  .delete-group-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .edit-group-icon {
+    color: #007bff;
+  }
+
+  .delete-group-icon {
+    color: #dc3545;
+  }
+
+  /* Стили для кнопок в сообщениях */
+  .edit-button,
+  .delete-button,
+  .pin-button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .edit-button {
+    color: #007bff;
+  }
+
+  .delete-button {
+    color: #dc3545;
+  }
+
+  .pin-button {
+    color: #f0ad4e;
+  }
+
+  /* Стили для кнопок в чате */
+  .chat-tools button {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .chat-tools button:hover {
+    background-color: #eee;
+  }
+
+  /* Стили для кнопки показа закрепленных сообщений */
+  .chat-header button:hover {
+    background-color: #eee;
+  }
 }
 
 /* Стили для кнопок в боковой панели */
